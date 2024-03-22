@@ -1,58 +1,50 @@
 "use client";
 import React from "react";
 
-const features = {
-  title: "Features",
-  items: [
-    {
-      title: "Customizable",
-      description:
-        "Choose from 100s of designer made templates, and change anything you want to create your professional eCommerce website.",
-      image:
-        "https://images.unsplash.com/photo-1600000000000-0000000000000?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-      alt: "Customizable",
-    },
-    {
-      title: "Fast",
-      description:
-        "Our servers are located in the United States and Europe, ensuring a fast response time for your queries.",
-      image:
-        "https://images.unsplash.com/photo-1600000000000-0000000000000?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-      alt: "Fast",
-    },
-    {
-      title: "Intergration",
-      description:
-        "We offer a wide range of integrations with our eCommerce platform, allowing you to easily integrate your eCommerce website with our platform.",
-      image:
-        "https://images.unsplash.com/photo-1600000000000-0000000000000?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-      alt: "Integration",
-    },
-    {
-      title: "Full Stack",
-
-      image:
-        "https://images.unsplash.com/photo-1600000000000-0000000000000?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-      alt: "Full Stack",
-    },
-    {
-      title: "Loyalty",
-      description:
-        "Set up your loyalty program and start rewarding your customers for their purchases and actions they take on your site.",
-      image:
-        "https://images.unsplash.com/photo-1600000000000-0000000000000?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-      alt: "Loyalty",
-    },
-    {
-      title: "Support",
-      description:
-        "Get 24/7 support from our team to help you with any issues you have.",
-      image:
-        "https://images.unsplash.com/photo-1600000000000-0000000000000?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-      alt: "Support",
-    },
-  ],
-};
+const features = [
+  {
+    title: "Customizable",
+    description:
+      "Choose from 100s of designer made templates, and change anything you want to create your professional eCommerce website.",
+    image: "/images/icon-cloud.png",
+    alt: "Customizable",
+  },
+  {
+    title: "Fast",
+    description:
+      "Our servers are located in the United States and Europe, ensuring a fast response time for your queries.",
+    image: "/images/icon-fast.png",
+    alt: "Fast",
+  },
+  {
+    title: "Intergration",
+    description:
+      "We offer a wide range of integrations with our eCommerce platform, allowing you to easily integrate your eCommerce website with our platform.",
+    image: "/images/icon-journey.png",
+    alt: "Integration",
+  },
+  {
+    title: "Full Stack",
+    description:
+      " get full stack software  development services with our team.",
+    image: "/images/icon-layer.png",
+    alt: "Full Stack",
+  },
+  {
+    title: "Loyalty",
+    description:
+      "Set up your loyalty program and start rewarding your customers for their purchases and actions they take on your site.",
+    image: "/images/icon-location.png",
+    alt: "Loyalty",
+  },
+  {
+    title: "Support",
+    description:
+      "Get 24/7 support from our team to help you with any issues you have.",
+    image: "/images/icon-support-1.png",
+    alt: "Support",
+  },
+];
 
 export default function SecondSection() {
   return (
@@ -75,8 +67,57 @@ export default function SecondSection() {
           </button>
         </div>
         <video className=" rounded-xl md:w-2/5 p-4 md:p-0" autoPlay muted loop>
-            <source src="/content/video2.mp4" type="video/mp4" />
+          <source src="/content/video2.mp4" type="video/mp4" />
         </video>
+      </div>
+      <div className=" flex-col items-center justify-center">
+        <div className=" text-3xl flex justify-center md:text-5xl font-bold pt-5 pb-10 bg-gradient-to-r from-purple-400 to-blue-800 bg-clip-text text-transparent">
+          Product Features
+        </div>
+        <div className="grid grid-cols-1 p-4 md:grid md:grid-cols-3 gap-4 md:px-40">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="flex-col space-y-6 pb-10 border
+                        
+                        p-8 rounded-xl items-center justify-center w-full hover:scale-105 transform transition-all duration-500 ease-in-out
+                        "
+            >
+              <div
+                className="
+                            text-gray-600 text-3xl font-bold
+                            "
+              >
+                <img
+                  src={feature.image}
+                  alt={feature.alt}
+                  width={300}
+                  height={300}
+                  className="object-contain h-20 w-20 items-center justify-center flex mb-10"
+                />
+                <div>
+                  <div
+                    className="text-2xl pb-4 bg-gradient-to-t
+                                    from-black
+                                    to-gray-400
+                                    bg-clip-text
+                                    text-transparent
+
+                                    
+                                    
+                                    "
+                  >
+                    {feature.title}
+                  </div>
+
+                  <div className="bg-gradient-to-r from-gray-800 to-gray-500 bg-clip-text text-transparent text-lg">
+                    {feature.description}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
