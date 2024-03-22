@@ -38,7 +38,7 @@ export default function Carousel() {
   return (
     <div>
       {/* heading text */}
-      <div className=" items-center justify-center flex text-3xl font-bold md:pb-10 px-10 mt-6 bg-gradient-to-r from-blue-500 to-pink-300 bg-clip-text text-transparent">
+      <div className=" items-center justify-center flex text-3xl font-bold md:pb-10 px-10 mt-6 bg-gradient-to-r from-purple-700 to-green-500 bg-clip-text text-transparent">
         More than 50+ brands have built their business with us!
       </div>
       {/* container for the image grid */}
