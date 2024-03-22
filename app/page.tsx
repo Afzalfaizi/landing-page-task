@@ -3,6 +3,7 @@ import Image from "next/image";
 import HeroSection from "./hero-section/page";
 import Carousel from "@/components/ui/carousel";
 import SecondSection from "./second-section/page";
+import ThirdSection from "./third-section/page";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     <HeroSection/>
     <Carousel/>
     <SecondSection/>
+    <ThirdSection/>
    </div>
   );
 }
