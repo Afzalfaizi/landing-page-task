@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function () {
+export default function ThirdSection () {
   return (
     <div className=" flex p-10 flex-col md:flex-row md:justify-evenly">
       <div className=" flex-col md:flex-row gap-6 md:px-10 flex">

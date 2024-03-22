@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const features = [
   {
@@ -88,7 +89,7 @@ export default function SecondSection() {
                             text-gray-600 text-3xl font-bold
                             "
               >
-                <img
+                <Image
                   src={feature.image}
                   alt={feature.alt}
                   width={300}
