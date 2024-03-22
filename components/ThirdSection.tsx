@@ -39,7 +39,36 @@ export default function () {
                   height={70}
                 />
                 <div>
-                Add unlimited products and variations. And manage your inventory with ease.
+                  Add unlimited products and variations. And manage your
+                  inventory with ease.
+                </div>
+              </div>
+            </div>
+            <div className=" flex-col">
+              <div className=" text-lg flex items-center gap-5">
+                <Image
+                  src="/images/icon-analytics.png"
+                  alt="feature-2"
+                  width={70}
+                  height={70}
+                />
+                <div>
+                  Gain valuable insights into your customers and products with
+                  our analytics tools.{" "}
+                </div>
+              </div>
+            </div>
+            <div className=" flex-col">
+              <div className=" text-lg flex items-center gap-5">
+                <Image
+                  src="/images/icon-shield.png"
+                  alt="feature-2"
+                  width={70}
+                  height={70}
+                />
+                <div>
+                  Best in class security to protect your data and your
+                  customers.
                 </div>
               </div>
             </div>

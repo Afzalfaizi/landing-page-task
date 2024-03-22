@@ -1,10 +1,10 @@
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
-import HeroSection from "./hero-section/page";
+import HeroSection from "@/components/HeroSection";
 import Carousel from "@/components/ui/carousel";
-import SecondSection from "./second-section/page";
-import ThirdSection from "./third-section/page";
-
+import SecondSection from "@/components/SecondSection";
+import ThirdSection from "@/components/ThirdSection";
+import PriceSection from "@/components/PriceSection";
 export default function Home() {
   return (
    <div>
@@ -13,6 +13,7 @@ export default function Home() {
     <Carousel/>
     <SecondSection/>
     <ThirdSection/>
+    <PriceSection/>
    </div>
   );
 }
