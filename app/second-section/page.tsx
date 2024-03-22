@@ -59,12 +59,24 @@ export default function SecondSection() {
     <div>
       <div className=" md:flex-row flex-col items-center flex justify-center pb-10">
         <div className=" p-5 justify-center md:w-1/3">
-          <div className=" bg-gradient-to-r from-blue-800 to bg-green-300 bg-clip-text text-transparent text-4xl md:text-6xl font-bold pb-10"></div>
-          From startup to enterprise, Faizi tech is built for every type of
-          business. Whether your company needs a simple website or an advanced
-          eCommerce website, Faizi tech is the solution for you. We provide a
-          wide range of services that will make  sure your project runs smoothly and efficiently.
+          <div
+            className=" bg-gradient-to-r from-blue-800 to bg-green-300 bg-clip-text
+           text-transparent text-4xl md:text-4xl font-bold pb-6"
+          >
+            From startup to enterprise, Faizi tech is built for every type of
+            business.
+          </div>
+          <div className=" text-2xl mb-8">
+            Built for all businesses and communities, Faizi tech is the only
+            platform you need to grow your business.
+          </div>
+          <button className=" bg-blue-500 text-white p-4 justify-center flex md:w-1/3 rounded-lg hover:bg-blue-600">
+            Get started
+          </button>
         </div>
+        <video className=" rounded-xl md:w-2/5 p-4 md:p-0" autoPlay muted loop>
+            <source src="/content/video2.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   );
