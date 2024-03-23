@@ -24,7 +24,7 @@ const Footer = () => {
             No matter what you sell, Faizi Tech has everthing you need to run
             your online store
           </h1>
-          <Link href={"afzaalm993@gmail.com"}>
+          <Link href={"https://mail.google.com/mail"}>
             {" "}
             <p className=" mt-[1.3rem] text-blue-700 underline font-semibold ">
               afzaalm993@gmail.com
