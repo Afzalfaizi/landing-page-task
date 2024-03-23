@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function ThirdSection () {
+export default function ThirdSection() {
   return (
     <div className=" flex p-10 flex-col md:flex-row md:justify-evenly">
       <div className=" flex-col md:flex-row gap-6 md:px-10 flex">
@@ -12,7 +12,7 @@ export default function ThirdSection () {
         </div>
         <div className=" flex-col border p-4 rounded-xl md:w-2/5 ">
           <div
-            className=" text-4xl flex justify-center text-center md:text-6xl bg-gradient-to-b from-yellow-300 to-blue-300
+            className=" text-4xl flex justify-center font-bold text-center md:text-6xl bg-gradient-to-b from-yellow-300 to-blue-300
            bg-clip-text text-transparent"
           >
             Fully Customizable eCommerce
@@ -27,11 +27,10 @@ export default function ThirdSection () {
               />
               <div className=" flex flex-col gap-2">
                 Choose from a variety of store templates to get started. And
-                customize your store to fit your brand.
               </div>
             </div>
             <div className=" flex-col">
-              <div className=" text-lg flex items-center gap-5">
+              <div className=" text-lg flex items-center gap-4">
                 <Image
                   src="/images/icon-product.png"
                   alt="feature-2"
@@ -45,7 +44,7 @@ export default function ThirdSection () {
               </div>
             </div>
             <div className=" flex-col">
-              <div className=" text-lg flex items-center gap-5">
+              <div className=" text-lg flex items-center gap-4">
                 <Image
                   src="/images/icon-analytics.png"
                   alt="feature-2"
@@ -59,7 +58,7 @@ export default function ThirdSection () {
               </div>
             </div>
             <div className=" flex-col">
-              <div className=" text-lg flex items-center gap-5">
+              <div className=" text-lg flex items-center gap-4">
                 <Image
                   src="/images/icon-shield.png"
                   alt="feature-2"
