@@ -20,7 +20,7 @@ const features = [
     price: "$200/month",
     fees: "2.4% + 30¢ per transaction",
     description:
-      "For businesses that need more. Get access to all the features you need to grow.",
+      "For businesses that need more. Get access to all the features you need to up.",
   },
 ];
 
