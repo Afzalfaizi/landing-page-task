@@ -17,5 +17,5 @@ jobs:
           git config --global user.email "afzalm993@gmail.com"
           git config --global user.name "Afzalfaizi"
           git add commit.txt
-          git commit -m "Automated commit to keep streak in my absence"
+          git commit -m "Automated commit to keep streak"
           git push https://github.com/Afzalfaizi/landing-page-task.git HEAD:main
