@@ -16,5 +16,5 @@ jobs:
           git config --global user.email "afzalm993@gmail.com"
           git config --global user.name "Afzalfaizi"
           git add commit.txt
-          git commit -m "Automated commit to keep streak"
+          git commit -m "Automated commit to keep streak in my absence"
           git push
